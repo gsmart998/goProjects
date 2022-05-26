@@ -27,3 +27,5 @@ git checkout master     -переключение на мастер ветку (
 git branch -d new_branch    -удаление ветки new_branch
 git merge new_branch    -"слияние" в мастер ветку другой ветки. (работает находясь в мастер ветке!)
 git chechout -b new_branch_2      -создание новой ветки и переключение на нее
+
+afs
