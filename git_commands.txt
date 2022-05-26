@@ -28,4 +28,13 @@ git branch -d new_branch    -удаление ветки new_branch
 git merge new_branch    -"слияние" в мастер ветку другой ветки. (работает находясь в мастер ветке!)
 git chechout -b new_branch_2      -создание новой ветки и переключение на нее
 
-afs
+// Сервер
+
+git push origin master  -отправка всех изменений после комиита на сервер
+git pull origin master      -получение всех изменений с сервера
+
+// Теги
+
+git tag some_tag    -добавление лайт тега к коммиту
+git tag -a some_new_tag 'some comment'      -добавление аннотированного комментария к коммиту
+git push --tags     -отправка коммитов С ТЕГАМИ! на сервер
