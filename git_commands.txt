@@ -1,0 +1,29 @@
+// Первоначальная настройка:
+git config --global user.name "Dima Shchedrin"  -установка имени пользователя
+git config --global user.email gsmart998@gmail.com      -установка емейла пользователя
+
+// Основные команды
+
+git init    -инициализация текущего репозитория для работы git
+git add file_name   -добавление файла в индекс
+git commit -m "some comment"    -создание коммита с комментарием
+git log     -отображает историю коммитов
+git log -p   -более развернутая история коммитов
+git status      -отображение текущего состояния
+git restore file_name   -откатывает состояние файла к последнему коммиту
+git diff    -отображает изменения в файлах
+git diff --staged   -отображает изменения в файлах которые уже были закоммичены
+git mv main.go new_name.go      -переименование файла 
+git mv main.go new_folder    -перемещение файла в новую папку
+git rm file_name  -удалить файл (локально и из индекса)
+git rm --cached file_name  -удалить файл только из индекса, локальный файл останется
+
+// Ветки
+
+git branch -a   -отображение всех веток проекта
+git branch new_branch   -создание новой ветки new_branch
+git checkout new_branch     -переключение на новую ветку
+git checkout master     -переключение на мастер ветку (либо любую другую)
+git branch -d new_branch    -удаление ветки new_branch
+git merge new_branch    -"слияние" в мастер ветку другой ветки. (работает находясь в мастер ветке!)
+git chechout -b new_branch_2      -создание новой ветки и переключение на нее
