@@ -4,19 +4,12 @@ import (
 	"database/sql"
 	"fmt"
 
+	"example.com/packages/db"
 	_ "github.com/lib/pq"
 )
 
-const (
-	host     = "abul.db.elephantsql.com"
-	port     = 5432
-	user     = "xpztuuwl"
-	password = "xWyIxQxj1AXsK4YfyvIQbUkjxHs1WBt6"
-	dbname   = "xpztuuwl"
-)
-
 func main() {
-	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
+	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable", db.Host, db.Port, db.User, db.Password, db.Dbname)
 
 	db, err := sql.Open("postgres", psqlInfo)
 	if err != nil {
